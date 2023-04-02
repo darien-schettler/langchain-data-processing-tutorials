@@ -23,7 +23,7 @@ class BaseRetriever(ABC):
         """
 ```
 
-It\'s that simple! The `get_relevant_documents` method can be
+It's that simple! The `get_relevant_documents` method can be
 implemented however you see fit.
 
 Of course, we also help construct what we think useful Retrievers are.
@@ -57,9 +57,7 @@ showing the one-liner for doing so, but then break down what is actually
 going on.
 
 First, let\'s import some common classes we\'ll use no matter what.
-:::
 
-::: {#8d369452 .cell .code execution_count="3"}
 ``` python
 from langchain.chains import RetrievalQA
 from langchain.llms import OpenAI
@@ -121,7 +119,7 @@ index.vectorstore
 
     <langchain.vectorstores.chroma.Chroma at 0x119aa5940>
 
-If we then want to access the VectorstoreRetriever, we can do that with:
+If we then want to access the **`VectorstoreRetriever`**, we can do that with:
 
 ``` python
 index.vectorstore.as_retriever()
